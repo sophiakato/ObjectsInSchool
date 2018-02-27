@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="object.js"></script>
+    <script src="actions.js"></script>
+    <script src="data.js"></script>
+    <title>School System</title>
+    <h>School Management System</h>
+</head>
+<body onload = "buildSelect()">
+<img src="img/hills.png" id="Hills">
+
+<!--Select tab for listing all values-->
+<select id = "titles">
+    <option value="0">Teachers</option>
+    <option value="1">Students</option>
+    <option value="2">Sections</option>
+</select>
+
+<div id="listOutput"></div>
+<button id="listButton" onclick="listItems()">List</button>
+
+<!--Student/Teacher/Section for entering and adding selections into allStudents/Teachers/Sections-->
+<table id = "table" cellspacing=”3” cellpadding=”8”>
+    <tr id="studentRow">
+        <!--<td><input type="text" id="homework" placeholder="Homework Grade"><br></td>-->
+        <td><input type="text" id="studentFirst" placeholder="Student First Name"><br></td>
+        <td><input type="text" id="studentLast" placeholder = "Student Last Name"></td>
+        <td><input type="number" id="gradeLevel" placeholder = "Student Grade"></td>
+        <td><input type="text" id="idNumber" placeholder = "Student ID #"></td>
+        <td><button id="studentButton" onclick= addStudent() >Add Student</button></td>
+    </tr>
+    <tr id = "teacherRow">
+        <td><input type="text" id="teacherFirst" placeholder = "Teacher First Name"></td>
+        <td><input type="text" id="teacherLast" placeholder = "Teacher Last Name"></td>
+        <td><input type="text" id="teacherSubject" placeholder = "Teacher Subject"></td>
+        <td><button id="teacherButton" onclick = "addTeacher()">Add Teacher</button></td>
+    </tr>
+    <tr id = "sectionRow">
+        <td><input type="text" id="sectionName" placeholder = "Section Name"></td>
+        <td><input type="number" id="maxSize" placeholder = "Maximum Class Size"></td>
+        <td><button id="sectionButton" onclick = "addSection()">Add Section</button></td>
+    </tr>
+</table>
+
+<!--For select tabs and buttons for adding student/teacher to section-->
+<table id = addToSection cellspacing=”2” cellpadding=”5”>
+    <tr>
+        <td><select id = "selectStudent">
+            <option value="0">Select Student</option>
+        </select></td>
+        <td><select id = "selectSection">
+            <option value="0">Select Section</option>
+        </select></td>
+        <td><button type="button" id="addButton" onclick = "addStudentToSection()" >Add Selection</button></td>
+    </tr>
+
+    <tr>
+        <td><select id = "selectTeacher">
+            <option value="0">Select Teacher</option>
+        </select></td>
+        <td><select id = "chooseSection">
+            <option value="0">Select Section</option>
+        </select></td>
+
+        <td><button type="button" id="addTeacherButton" onclick = "addTeacherToSection()" >Add Selection</button></td>
+    </tr>
+
+</table>
+
+<!--Confirming that the selection was added-->
+<div id="confirmation"></div>
+
+<!--When the max class is met by the number of students or exceeded-->
+<div id="maxWarning"></div>
+</body>
+</html>
+
+

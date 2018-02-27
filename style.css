@@ -1,0 +1,155 @@
+
+button{
+    width: 100px;
+    height: 27px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #548F9E;
+    border: none;
+    color: white;
+    /*padding: 15px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Hiragino Sans";
+}
+
+select{
+    width: 100px;
+    height: 27px;
+    background-color: #fffdd0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    font-family: "Hiragino Sans";
+    font-size: 10px;
+}
+
+#table{
+    position: relative;
+    top: 250px;
+    left: 305px;
+    border: none;
+    background-color: transparent;
+    font-family: "Hiragino Sans";
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#table td, #table th {
+    /*border: 1px solid #ddd;*/
+    padding: 8px;
+    font-family: "Hiragino Sans";
+
+}
+/*#table tr:hover {background-color: #000080}*/
+
+#confirmation{
+    position: absolute;
+    top: 380px;
+    left: 80px;
+    color: #60929A;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+}
+
+#addToSection td, #addToSection th{
+    padding: 8px;
+    font-family: "Hiragino Sans";
+}
+
+#addToSection{
+    position: relative;
+    bottom: 10px;
+    left: 380px;
+    background-color: transparent;
+    font-family: "Hiragino Sans";
+    border-collapse: collapse;
+    width: 50%;
+    border-color: transparent;
+}
+
+h{
+    position: relative;
+    left: 509px;
+    top: 60px;
+    background-color: #fffdd0;
+    width: 300px;
+    border: 3px solid #60929A;
+    padding: 10px;
+    text-align: center;
+    color: 	#60929A;
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px #BC8F8F;
+}
+
+body {
+    font-family: "Hiragino Sans";
+    vertical-align: top;
+    background-color:#fffdd0;
+}
+
+#Hills{
+    position: absolute;
+    top: 380px;
+    left: 650px;
+    width: 650px;
+    height: 323px;
+}
+
+#titles{
+    position: relative;
+    top: 125px;
+    left: 229px;
+    width: 100px;
+    height: 27px;
+    background-color: #fffdd0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    font-family: "Hiragino Sans";
+}
+
+#listButton{
+    position: relative;
+    top: 125px;
+    left: 282px;
+    width: 100px;
+    height: 27px;
+    font-family: "Hiragino Sans";
+}
+
+#listOutput{
+    position: absolute;
+    top: 490px;
+    right: 554px;
+    border: transparent;
+    background-color: #dbbebe;
+    font-family: "Hiragino Sans";
+    font-size: 12px;
+}
+
+input{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: transparent;
+}
+
+#confirmation{
+    position: absolute;
+    left: 535px;
+    top: 450px;
+}
+
+#maxWarning{
+    position: absolute;
+    background-color: #dbbebe;
+    color: crimson;
+    left: 540px;
+    top: 650px;
+
+}
